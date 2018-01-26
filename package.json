@@ -1,0 +1,30 @@
+{
+  "name": "feedbackapp",
+  "version": "1.0.0",
+  "description": "App created in the context of the Udemy course \"Node With React Fullstack Web Development\"",
+  "main": "index.js",
+  "engines": {
+      "node": "9.0.0",
+      "npm": "5.5.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MynahMarie/FeedbackApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MynahMarie/FeedbackApp/issues"
+  },
+  "homepage": "https://github.com/MynahMarie/FeedbackApp#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
