@@ -9,7 +9,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -22,11 +24,14 @@
   },
   "homepage": "https://github.com/MynahMarie/FeedbackApp#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.2",
     "mongoose": "^5.0.1",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
+    "passport-google-oauth20": "^1.0.0",
+    "stripe": "^5.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.14.11"
